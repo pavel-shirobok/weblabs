@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>TODO</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/*body{
+			width: 800px;
+			height: 800px;
+		}
+
+		.tabManager {
+			display: inline-block;
+			border-color: black;
+			border-style: solid;
+			border-radius: 10px;
+			border-width: 2px;
+		}
+
+		.tabManager > input[type=radio]{
+			display: inline;
+			width: 100px;
+			-webkit-appearance:none;
+			border-left: aqua;
+			border-right: aqua;
+			border-style: solid;
+		}
+
+		.tabManager > input[type]:before{
+			content: attr(data-label);
+			padding: 5px;
+			box-sizing:border-box;
+		}
+
+		.tabManager > input[type]:checked:before {
+			content: attr(data-label);
+			color: red;
+		}
+
+		.tabManager > input[type]:checked + div{
+			display: block;
+		}
+
+		.tabManager > div{
+			position: absolute;
+			display: none;
+			top: 30px;
+
+			min-width: 100px;
+			min-height: 100px;
+		}
+
+		.test>*[data-test=test] ~ i:not(i:empty){
+			color: red;
+		}*/
+	</style>
+
+	<style type="text/css">
+		.tabManager{
+			display: inline-block;
+			width: 800px;
+			height: 600px;
+		}
+
+		.tabs{
+			display: inline-block;
+			width: 100%;
+			height: 25px;
+			-webkit-user-select: none;
+		}
+
+		.tab {
+			display: inline-block;
+			position: relative;
+			width: 100%;
+			max-width: 200px;
+			min-width: 50px;
+			min-height: 25px;
+
+			height: 25px;
+
+			margin-right: -17px;
+			-webkit-user-select: none;
+		}
+
+		.active{
+		}
+
+		.tab-background{
+			width: 100%;
+			height: 0px;
+
+			-webkit-border-image: url('./img/chrome-tab.png') 0 15 25 15 stretch stretch;
+			border-top-width: 0px;
+			border-right-width: 15px;
+			border-bottom-width: 25px;
+			border-left-width: 15px;
+			box-sizing:border-box;
+			position: absolute;
+			z-index: -1;
+			top: 0px;
+			left: 0px;
+		}
+
+		.close{
+			background: url('./img/chrome-close-button.png');
+			background-repeat: no-repeat;
+			display: inline-block;
+			width: 8px;
+			height: 8px;
+			float: right;
+
+			margin-right: 15px;
+			margin-top: 8px;
+		}
+
+		.header{
+			-webkit-user-select: none;
+			cursor: default;
+
+			float: left;
+			font-family: 'Verdana';
+			font-size: 14px;
+
+			max-width: 130px;
+			margin-left: 31px;
+			margin-top: 3px;
+			margin-right: 10px;
+
+			white-space: nowrap;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class='patch9'></div>
+	<div class='tabManager'>
+		<div class='tabs'>
+
+			<div class='tab'>
+				<span class='header'>Textsa asdf asdf </span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+			<div class='tab'>
+				<span class='header'>Text</span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+			<div class='tab'>
+				<span class='header'>Text</span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+			<div class='tab'>
+				<span class='header'>Textsa asdf asdf Textsa asdf asdfTextsa asdf asdf</span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+			<div class='tab'>
+				<span class='header'>Text</span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+			<div class='tab'>
+				<span class='header'>Text</span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+
+<div class='tab'>
+				<span class='header'>Textsa asdf asdf </span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+			<div class='tab'>
+				<span class='header'>Text</span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+			<div class='tab'>
+				<span class='header'>Text</span>
+				<i class='close'></i>
+				<div class='tab-background'></div>
+			</div>
+
+
+		</div>
+		<div class='content'>
+		</div>
+	</div>
+
+</body>
+</html>

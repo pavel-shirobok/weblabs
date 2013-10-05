@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shirobok Pavel - Portolio</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<style>
+		
+		body{
+			margin:0px;
+			font-family: 'Dosis', "Verdata", sans-serif;
+			color: #8C5B33;
+		}
+
+	@media only screen and (orientation : landscape){
+
+		.menu{
+			position: fixed;
+			width: 100%;
+			height: 50px;
+			background: #324F4D;
+		}
+
+		.content-block{
+			display: inline-table;
+			width: 100%;
+			min-height: 200px;
+		}
+
+		div[class^='content-']:nth-of-type(odd){background: #33241D;}
+		div[class^='content-']:nth-of-type(even){background: #40312A;}
+
+		.about{
+			background-image: url(./img/portfolio-background.jpg) !important;
+			background-size: cover !important;
+			margin-top: 50px;
+			height: 500px;
+		}
+
+		.header, .content{
+			display: inline-block;
+			height: 100%;
+			box-sizing: border-box;
+			padding: 10px;
+		}
+
+		.header, .content{
+			text-shadow: 1.1px 1.1px 1px rgba(255, 255, 255, 0.2), -1.1px -1.1px 1px rgba(0, 0, 0, 0.5);
+		}
+
+		.header{
+			width: 30%;
+			text-align: right;
+			font-size: 40px;
+			float: left;
+		}
+
+		.content{
+			width: 70%;
+			font-size: 20px;
+			padding-top: 30px;
+		}
+
+		.avatar{
+			width: 40px;
+			height: 40px;
+			box-sizing: border-box;
+			border-radius: 40px;
+			background-image: url(./img/avatar.jpg);
+			background-size: cover;
+			border-color: white;
+			border-width: 2px;
+			border-style: solid;
+			margin: 5px;
+			float: left;
+		}
+
+		.site-name{
+			margin-top: 8px;
+			font-size: 24px !important;
+			color: white !important;
+			float: left;
+		}
+
+		.menu-list{
+			display: inline-block;
+			text-align: right;
+			float: right;
+			margin-top: 10px;
+			margin-right: 10px;
+		}
+
+		/**/
+
+		i[class$='-icon']{
+			display: inline-block;
+			float: left;
+			width: 24px;
+			height: 24px;
+			margin: -2px 3px 0px 0px;
+			background-repeat: no-repeat;
+		}
+
+		.about-icon{ background-image: url(./icons/glyphicons_003_user.png); }
+		.skills-icon{ background-image: url(./icons/glyphicons_074_cup.png); }
+		.works-icon{ background-image: url(./icons/glyphicons_357_suitcase.png); }
+		.contacts-icon{ background-image: url(./icons/glyphicons_352_nameplate.png); }
+
+		.mi{
+			color: #324F4D;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			text-overflow: clip;
+
+			width: 24px;
+			height: 24px;
+
+			margin: 5px;
+			
+			display: inline-block;
+			float: left;
+
+			overflow: hidden;
+
+			-webkit-transition: width 0.3s ease, color 0.2s ease;
+		}
+
+		.mi>i{
+			float: left;
+		}
+
+		.mi:hover{
+			width: 150px;
+			color: white;
+		}
+		}
+
+
+		/*
+		---------------------------------------------------------------------
+
+		*/
+		@media only screen and (orientation : portrait){
+		body{
+
+		}
+		.menu{
+			position: fixed;
+			width: 50px;
+			height: 100%;
+			background: #324F4D;
+		}
+
+		.content-block{
+			display: inline-table;
+			width: 100%;
+			min-height: 200px;
+			padding-left: 50px;
+			box-sizing:border-box;
+		}
+
+		div[class^='content-']:nth-of-type(odd){background: #33241D;}
+		div[class^='content-']:nth-of-type(even){background: #40312A;}
+
+		.about{
+			/*background-image: url(./img/portfolio-background.jpg) !important;
+			background-size: cover !important;*/
+			height: 500px;
+		}
+
+		.header, .content{
+			width: 100%;
+			padding: 10px;
+			
+			box-sizing: border-box;			
+
+			text-shadow: 1.1px 1.1px 1px rgba(255, 255, 255, 0.2), -1.1px -1.1px 1px rgba(0, 0, 0, 0.5);
+		}
+
+		.header{
+			height: 15%;
+			text-align: right;
+			vertical-align: bottom;;
+			font-size: 40px;
+		}
+
+		.content{
+			height: 85%;
+			font-size: 20px;
+		}
+
+		.avatar{
+			width: 40px;
+			height: 40px;
+			box-sizing: border-box;
+			border-radius: 40px;
+			background-image: url(./img/avatar.jpg);
+			background-size: cover;
+			border-color: white;
+			border-width: 2px;
+			border-style: solid;
+			margin: 5px;
+			float: left;
+		}
+
+		.site-name{
+			display: none;
+			/*font-size: 24px !important;
+			color: white !important;
+			width: 10px;
+			word-wrap :break-word;*/
+			/*margin-top: 8px;
+			
+			
+			float: left;
+			white-space: nowrap;*/
+		}
+
+		.menu-list{
+			text-align: right;
+			
+			width: 100%;
+			margin-top: 10px;
+			
+			display: inline-block;
+			float: right;
+		}
+
+		/**/
+
+		i[class$='-icon']{
+			display: inline-block;
+			float: left;
+			width: 24px;
+			height: 24px;
+			margin: -2px 3px 0px 0px;
+			background-repeat: no-repeat;
+		}
+
+		.about-icon{ background-image: url(./icons/glyphicons_003_user.png); }
+		.skills-icon{ background-image: url(./icons/glyphicons_074_cup.png); }
+		.works-icon{ background-image: url(./icons/glyphicons_357_suitcase.png); }
+		.contacts-icon{ background-image: url(./icons/glyphicons_352_nameplate.png); }
+
+		.mi{
+			color: #324F4D;
+			white-space: nowrap;
+			text-decoration: none;
+			text-align: center;
+			text-overflow: clip;
+
+			width: 24px;
+			height: 24px;
+
+			margin-top: 5px;
+			margin-left: 12px;
+			margin-bottom: 5px;
+			
+			display: inline-block;
+			float: left;
+
+
+
+			overflow: hidden;
+
+			background-color: #324F4D;
+
+			-webkit-transition: width 0.3s ease, color 0.2s ease;/**/
+		}
+
+		.mi>i{
+			float: left;
+		}
+
+		.mi:hover{
+			width: 150px;
+			color: white;
+		}
+	}
+	</style>
+</head>
+
+<body>
+	<div class='menu'>
+		<div class='avatar'></div>
+		<div class='site-name'>Shirobok Pavel - Portfolio</div>
+		<div class='menu-list'>
+			<a href='#about' class='mi active'><i class='about-icon'></i>About</a>
+			<a href='#skills' class='mi'><i class='skills-icon'></i>Skills and projects</a>
+			<a href='#works' class='mi'><i class='works-icon'></i>Works</a>
+			<a href='#contacts' class='mi'><i class='contacts-icon'></i>Contacts</a>
+		</div>
+	</div>
+
+	<div id='about' class='content-block about'>
+		<div class='header'>About:</div>
+		<div class='content'>My name is Shirobok Pavel, 24 years old.</div>
+	</div>
+
+	<div id='skills' class='content-block skills-projects'>
+		<div class='header'>Skills and projects:</div>
+		<div class='content'>Content</div>
+	</div>
+
+	<div id='works' class='content-block works'>
+		<div class='header'>Works:</div>
+		<div class='content'>Content</div>
+	</div>
+
+	<div id='contacts' class='content-block contacts'>
+		<div class='header'>Contacts:</div>
+		<div class='content'>Content</div>
+	</div>
+
+
+	<!-- Scripts -->
+	<script src="./js/jquery.js"></script>
+    <script src="./js/jquery.tmpl.min.js"></script>
+
+    <script></script>
+
+</body>
+</html>
