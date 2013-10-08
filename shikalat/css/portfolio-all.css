@@ -1,26 +1,45 @@
 @media all{
-	.menu{
-		position: fixed;
-		background: #324F4D;
-	}
-
-	.content-block{
+	.content-block, .site-header{
 		display: inline-table;
 		width: 100%;
 		min-height: 200px;
 	}
 
-	div[class^='content-']:nth-of-type(odd){background: #33241D;}
-	div[class^='content-']:nth-of-type(even){background: #40312A;}
+	.site-header{
+		background: #33241D;
+		padding: 20px;
+		box-sizing: border-box;
 
-	.about{
-		height: 500px;
 	}
+
+	.studio-name{
+		/*text-shadow:  1.1px 1.1px 1px rgba(255, 255, 255, 0.2),
+					 -1.1px -1.1px 1px rgba(0, 0, 0, 0.7);*/
+		background-image: url(../img/choko.png);
+		-webkit-background-clip: text;
+		color:rgba(255, 255, 255, 0.1);
+
+/*text-shadow: 0px 1px 0.1px rgba(255, 255, 255, 0.1);
+background-image: url(../img/choko.png);
+background-color: #8C5B33;
+-webkit-background-clip: text;
+-webkit-background-clip: text;
+color: rgba(255, 255, 255, 0);
+background-position-y: -100px;
+-webkit-transition: all 2s ease;
+background-repeat: no-repeat;*/
+
+	}
+		
+
+	.content-block:nth-of-type(odd){background: #33241D;}
+	.content-block:nth-of-type(even){background: #40312A;}
 
 	.header, .content{
 		padding: 10px;
 		box-sizing: border-box;			
-		text-shadow: 1.1px 1.1px 1px rgba(255, 255, 255, 0.2), -1.1px -1.1px 1px rgba(0, 0, 0, 0.5);
+		text-shadow:  1.1px 1.1px 1px rgba(255, 255, 255, 0.2),
+					 -1.1px -1.1px 1px rgba(0, 0, 0, 0.7);
 	}
 
 	.header{
@@ -30,70 +49,5 @@
 
 	.content{
 		font-size: 20px;
-	}
-
-	.avatar{
-		width: 40px;
-		height: 40px;
-		box-sizing: border-box;
-		border-radius: 40px;
-		background-image: url(../img/avatar.jpg);
-		background-size: cover;
-		border-color: white;
-		border-width: 2px;
-		border-style: solid;
-		margin: 5px;
-		float: left;
-	}
-
-	.site-name{
-		margin-top: 8px;
-		font-size: 24px !important;
-		color: white !important;
-		float: left;
-	}
-
-	.menu-list{
-		display: inline-block;
-		text-align: right;
-		margin-top: 10px;
-		float: right;
-	}
-
-	i[class$='-icon']{
-		display: inline-block;
-		float: left;
-		width: 24px;
-		height: 24px;
-		margin: -2px 3px 0px 0px;
-		background-repeat: no-repeat;
-	}
-
-	.about-icon{ background-image: url(../icons/glyphicons_003_user.png); }
-	.skills-icon{ background-image: url(../icons/glyphicons_074_cup.png); }
-	.works-icon{ background-image: url(../icons/glyphicons_357_suitcase.png); }
-	.contacts-icon{ background-image: url(../icons/glyphicons_352_nameplate.png); }
-
-	.mi{
-		color: #324F4D;
-		white-space: nowrap;
-		text-decoration: none;
-		text-align: center;
-		text-overflow: clip;
-		display: inline-block;
-		float: left;
-		width: 24px;
-		height: 24px;
-		overflow: hidden;
-		-webkit-transition: width 0.3s ease, color 0.2s ease;
-	}
-
-	.mi>i{
-		float: left;
-	}
-
-	.mi:hover{
-		width: 150px;
-		color: white;
 	}
 }

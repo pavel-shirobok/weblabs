@@ -1,16 +1,5 @@
 @media only screen and (orientation : landscape){
 
-	.menu{
-		width: 100%;
-		height: 50px;
-	}
-	
-	.about{
-		background-image: url(../img/portfolio-background.jpg) !important;
-		background-size: cover !important;
-		margin-top: 50px;
-	}
-
 	.header, .content{
 		display: inline-block;
 		height: 100%;
