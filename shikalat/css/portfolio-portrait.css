@@ -1,0 +1,39 @@
+@media only screen and (orientation : portrait){
+		.menu{
+			width: 50px;
+			height: 100%;
+		}
+
+		.content-block{
+			padding-left: 50px;
+			box-sizing:border-box;
+		}
+
+		.header, .content{
+			width: 100%;
+		}
+
+		.header{
+			height: 15%;
+			vertical-align: bottom;;
+		}
+
+		.content{
+			font-size: 20px;
+		}
+
+		.site-name{
+			display: none;
+		}
+
+		.menu-list{
+			width: 100%;
+		}
+
+		.mi{
+			margin-top: 5px;
+			margin-left: 12px;
+			margin-bottom: 5px;
+			background-color: #324F4D;
+		}
+	}
