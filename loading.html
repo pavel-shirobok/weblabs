@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Loading</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/*#clipping{
+			-webkit-clip-path:url(#subclipping);
+		}
+
+		.loading{
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			background: rgba(128, 128, 128, 0.5);
+			position: relative;
+			box-sizing: border-box;
+
+			-webkit-clip-path:url(#clipping);
+		}
+*/
+
+
+	</style>
+</head>
+
+<body>
+	<!-- <i class='loading'>
+		<i></i>
+		<i></i>
+	</i>
+ -->
+<!-- 	<svg width="50" height="50" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+     <defs>
+	    <clipPath id="subclipping">
+	    	 
+	    </clipPath>
+	    <clipPath id="clipping" >
+	         <circle cx="58px" cy="58px" r="50px"/>
+	    </clipPath>
+		<circle cx="25px" cy="25px" r="25px" stroke='#000000' />
+	 </defs>
+	</svg> -->
+
+<svg width='50px' height='50px' xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<clipPath id="clipping" >
+	    <circle cx="25" cy="25" r="25" stroke="black" stroke-width="3" fill="none" />
+   		<circle cx="25" cy="25" r="20" stroke="red" stroke-width="2" fill="none" />
+	</clipPath>
+
+  <circle cx="25" cy="25" r="25" clip-path='url(#clipping)' stroke="black" stroke-width="1" fill="red"/>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+   
+</svg> 
+
+<i></i><i></i>
+	<!-- Scripts -->
+	<script src="./js/jquery.js"></script>
+    <script src="./js/jquery.tmpl.min.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script></script>
+
+</body>
+</html>
