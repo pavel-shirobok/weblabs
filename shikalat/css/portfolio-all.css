@@ -37,7 +37,7 @@
 		display: inline-block;
 		width: 600px;
 		position: relative;
-		padding: 20px 80px 20px 100px;
+		padding: 20px 50px 20px 80px;
 	}
 
 	.content-block > div {
@@ -48,14 +48,13 @@
 		content: '';
 		position: absolute;
 		display: inline-block;
-		width: 20px;
+		width: 10px;
 		height: 100%;
-		
 	}
 
 	.content-block:after{
 		left: 0px;
-		top: -10px;
+		top: -5px;
 		box-shadow: inset 0px 0px 50px 5px rgba(0, 0, 0, 0.6);
 		-webkit-transform: skew(0deg, 45deg);
        	   -moz-transform: skew(0deg, 45deg);
@@ -63,7 +62,7 @@
 	}
 
 	.content-block:before{
-		right: -20px;
+		right: -10px;
 		top: 0px;
 		background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(53, 90, 88,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
@@ -112,7 +111,8 @@
 		color: #33241D; 
 	}
 
-	.content-block:nth-of-type(even), .content-block:nth-of-type(odd){
+	.content-block:nth-of-type(even), 
+	.content-block:nth-of-type(odd){
 		background-repeat: repeat-y;
 	}
 	.content-block:nth-of-type(even){
